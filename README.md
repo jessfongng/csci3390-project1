@@ -31,8 +31,10 @@ The original lines of code that generate the potential nonce:
     })
 ```
 Our modification to generate potential nonce from 1 to `n`:
+```
     val nonce = sc.range(0, trials).mapPartitionsWithIndex((indx, iter) => {
       val rand = new scala.util.Random(indx + seed)
       iter.map(x => rand.nextInt(trials) + 1)
     })
+```
 
