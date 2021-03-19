@@ -5,7 +5,7 @@ Project 1 report of Large Scale Data Processing class at Boston College. The cod
 ## Project Description
   
 ## Report Finding
-Running the program on local machine with `k = 2,3,4,5,6`, the result is listed in a table below.
+### 1. Running the program on local machine with `k = 2,3,4,5,6`, the result is listed in a table below.
 
 k | total time of elapsed (s) | number of trials | xS | hash value 
 ------------| ------------|------------|------------|------------
@@ -14,7 +14,6 @@ k | total time of elapsed (s) | number of trials | xS | hash value
 4 | 2 | 50000 | 566719889this_is_a_bitcoin_block_of_62425405_11160090 | 0000376df8a03266e2f09f99d1b1dca6dc5bc0b2d162fb34c52c22afd433432d
 5 | 3 | 1000000 | 1919540112this_is_a_bitcoin_block_of_62425405_11160090 | 00000458b7edf6753a8fbf41f0eadfbe0bd31e9f9c9dea18f39b3d33c981f0b8
 6 | 27 | 20000000 | 1051875242this_is_a_bitcoin_block_of_62425405_11160090 | 000000124f5fd2f46a862eff988e48eacdcddcd2126ea4f22d4477f790532860
-![image](https://user-images.githubusercontent.com/31459203/111829242-d1cf7880-88c2-11eb-86bc-568f1d441a86.png)
 
 
 ## Validating your environment
