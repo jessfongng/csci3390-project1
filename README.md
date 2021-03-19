@@ -7,10 +7,13 @@ Project 1 report of Large Scale Data Processing class at Boston College. The cod
 ## Report Finding
 Running the program on local machine with `k = 2,3,4,5,6`, the result is listed in a table below.
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+k | xS | hash value | total time of elapsed (s) | number of trials
+- | ---|------------|---------------------------|----------------- 
+2 | z | z | z | z
+3 | z | z | z | z
+4 | z | z | z | z
+5 | z | z | z | z
+6 | z | z | z | z
 
 ## Validating your environment
 Let's build and execute **project_1**.  
