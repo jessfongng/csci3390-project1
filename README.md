@@ -15,7 +15,7 @@ Content in the first column | Content in the second column
 
 
 k | xS | hash value | total time of elapsed (s) | number of trials
-- | ---|------------|---------------------------|----------------- 
+------------| ------------|------------|------------|------------
 2 | z | z | z | z
 3 | z | z | z | z
 4 | z | z | z | z
