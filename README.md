@@ -7,20 +7,15 @@ Project 1 report of Large Scale Data Processing class at Boston College. The cod
 ## Report Finding
 Running the program on local machine with `k = 2,3,4,5,6`, the result is listed in a table below.
 
-
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
-
-
-k | xS | hash value | total time of elapsed (s) | number of trials
+k | total time of elapsed (s) | number of trials | xS | hash value 
 ------------| ------------|------------|------------|------------
-2 | z | z | z | z
-3 | z | z | z | z
-4 | z | z | z | z
-5 | z | z | z | z
-6 | z | z | z | z
+2 | 2 | 100 | 1209735597this_is_a_bitcoin_block_of_62425405_11160090 | 001142511ea768b76db39b89813e53f72c2d262af548edd20d768cdfae8294fe
+3 | 2 | 1000 |92477141this_is_a_bitcoin_block_of_62425405_11160090 | 000a6b6c7c318d154b2b0a533416b5fcdd1157848910f453ac7268751250eb46
+4 | 2 | 50000 | 566719889this_is_a_bitcoin_block_of_62425405_11160090 | 0000376df8a03266e2f09f99d1b1dca6dc5bc0b2d162fb34c52c22afd433432d
+5 | 3 | 1000000 | 1919540112this_is_a_bitcoin_block_of_62425405_11160090 | 00000458b7edf6753a8fbf41f0eadfbe0bd31e9f9c9dea18f39b3d33c981f0b8
+6 | 27 | 20000000 | 1051875242this_is_a_bitcoin_block_of_62425405_11160090 | 000000124f5fd2f46a862eff988e48eacdcddcd2126ea4f22d4477f790532860
+![image](https://user-images.githubusercontent.com/31459203/111829242-d1cf7880-88c2-11eb-86bc-568f1d441a86.png)
+
 
 ## Validating your environment
 Let's build and execute **project_1**.  
