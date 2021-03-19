@@ -21,7 +21,7 @@ k | total time of elapsed (s) | number of trials | xS | hash value
 ------------| ------------|------------|------------|------------
 7 | 369|0.1 billion|227809291this_is_a_bitcoin_block_of_62425405_11160090|0000000ca1f8ccdbd8b83b6701b5139c28ded54bd917b1abbd08a2c9e41af967
 
-*Cluster Configuration* is 1 Master, 3 workers. Based on the result above, we discover that we need between 10^k to 10^{k+1} trials in order to find the solution, so we tried 10^7 trials to see if the solution can be found, and it worked.
+*Cluster Configuration* is 1 Master, 3 workers. Based on the result above, we discover that we need between img src="https://render.githubusercontent.com/render/math?math=10^{k}" to img src="https://render.githubusercontent.com/render/math?math=10^{k %2B1}" trials in order to find the solution, so we tried img src="https://render.githubusercontent.com/render/math?math=10^{7}" trials to see if the solution can be found, and it worked.
 
 ### 3. Program generates the potential nonce from 1 to `n` (the number of trials) instead of randomly
 The original lines of code that generate the potential nonce: 
