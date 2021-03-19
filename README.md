@@ -1,23 +1,16 @@
 # Large Scale Data Processing: Project 1
-## Jessica Fong Ng & Qingwei Meng
+## Author: Jessica Fong Ng & Qingwei Meng
 Project 1 report of Large Scale Data Processing class at Boston College. The code had been modify from [project 1 assignment description](https://github.com/CSCI3390/project_1). 
 
-## Setting up your local environment
-1.	[Install JDK](https://www.oracle.com/java/technologies/javase-jdk15-downloads.html)  
-  a.	Be sure to check that the environment variables are set properly.
+## Project Description
+  
+## Report Finding
+Running the program on local machine with `k = 2,3,4,5,6`, the result is listed in a table below.
 
-2.	[Install Spark](https://spark.apache.org/downloads.html)  
-  a.	Select version 3.0.1 with Hadoop 2.7.  
-  b.	After the installation, you may need to set the environment variables properly.  
-  c.	To test whether or not everything runs, open a terminal and type `spark-shell`. Now that you are in the Scala interpreter, you can execute Scala code here. For example, you can try `println(“Hello World!”)`. You can exit the shell by typing `:q`.  
-  d.	Tip: In the Spark shell, you can test segments of Scala codes before you write them in the file. It's a very convenient way to learn Scala and Spark.   
-  
-3.	[Install SBT](https://www.scala-sbt.org/download.html)  
-  a.	SBT is a builder for Scala programs.  
-  b.	Check that the environment variables are set properly.  
-  
-## Cloning the project_1 repository
-This is a template repository. You can duplicate the repository, renaming it and adjusting your own settings, but cannot directly clone it and push to its **origin/main** branch. Create your own repository by selecting the green **Use this template** button. You'll be submitting the link to the respository you created (more on that later). Once you have your own repository, you can clone it to your local machine.
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
 
 ## Validating your environment
 Let's build and execute **project_1**.  
