@@ -19,6 +19,7 @@ k | total time of elapsed (s) | number of trials | xS | hash value
 ### 2. Run the program on GCP to solve the case k = 7.
 k | total time of elapsed (s) | number of trials | xS | hash value 
 ------------| ------------|------------|------------|------------
+7 | 369|0.1 billion|227809291this_is_a_bitcoin_block_of_62425405_11160090|0000000ca1f8ccdbd8b83b6701b5139c28ded54bd917b1abbd08a2c9e41af967
 
 *Cluster Configuration* is 1 Master, 3 workers. Based on the result above, we discover that we need between 10^k to 10^{k+1} trials in order to find the solution, so we tried 10^7 trials to see if the solution can be found, and it worked.
 
