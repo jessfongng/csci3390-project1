@@ -3,7 +3,7 @@
 Project 1 report of Large Scale Data Processing class at Boston College. The code had been modify from [project 1 assignment description](https://github.com/CSCI3390/project_1). 
 
 ## Project Description
- For detail description, please check [project 1 assignment description].
+ For detail description, please check [project 1 assignment description](https://github.com/CSCI3390/project_1).
 ## Report Finding
 ### 1. Run the program on local machine with `k = 2,3,4,5,6`, the result is listed in a table below.
 
