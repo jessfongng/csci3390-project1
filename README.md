@@ -5,7 +5,7 @@ Project 1 report of Large Scale Data Processing class at Boston College. The cod
 ## Project Description
   
 ## Report Finding
-### 1. Running the program on local machine with `k = 2,3,4,5,6`, the result is listed in a table below.
+### 1. Run the program on local machine with `k = 2,3,4,5,6`, the result is listed in a table below.
 
 k | total time of elapsed (s) | number of trials | xS | hash value 
 ------------| ------------|------------|------------|------------
