@@ -16,17 +16,12 @@ k | total time of elapsed (s) | number of trials | xS | hash value
 6 | 27 | 20000000 | 1051875242this_is_a_bitcoin_block_of_62425405_11160090 | 000000124f5fd2f46a862eff988e48eacdcddcd2126ea4f22d4477f790532860
 
 
-## Validating your environment
-Let's build and execute **project_1**.  
-1. Navigate to the project root and type `sbt clean package` to build the project's **.jar** file.  
-2. Run the following command:
-```
-// Linux
-spark-submit --class project_1.main --master local[*] target/scala-2.12/project_1_2.12-1.0.jar
+### 2. Run the program on GCP to solve the case k = 7.
+k | total time of elapsed (s) | number of trials | xS | hash value 
+------------| ------------|------------|------------|------------
 
-// Unix
-spark-submit --class "project_1.main" --master "local[*]" target/scala-2.12/project_1_2.12-1.0.jar
-```
+*Cluster Configuration* is 1 Master, 3 workers. Based on the result above, we discover that we need between 10^k to 10^{k+1} trials in order to find the solution, so we tried 10^7 trials to see if the solution can be found, and it worked.
+
 3. Upon successful execution, you should see the message below. Note that `string`, `difficulty`, and `#trials` are the arguments you'll be passing in.
 ```
 Usage: project_1 string difficulty #trials
