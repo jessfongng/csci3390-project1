@@ -38,4 +38,4 @@ Our modification to generate potential nonce from 1 to `n`:
       iter.map(x => rand.nextInt(trials) + 1)
     })
 ```
-
+The approach to generate the nonce using the range number is less effective than randomly. If the range number is small, then it is challenging to find `xS` that finds the criteria.  
