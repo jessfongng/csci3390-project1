@@ -1,6 +1,6 @@
 # Large Scale Data Processing: Project 1
-## Understanding Git
-If you're unfamiliar with version control systems, especially Git, please consult the [Git Handbook](https://guides.github.com/introduction/git-handbook/) and some of the additional resources it provides.
+## Jessica Fong Ng & Qingwei Meng
+Project 1 report of Large Scale Data Processing class at Boston College. The code had been modify from [project 1 assignment description](https://github.com/CSCI3390/project_1)
 
 ## Setting up your local environment
 1.	[Install JDK](https://www.oracle.com/java/technologies/javase-jdk15-downloads.html)  
