@@ -56,6 +56,9 @@ object main {
     val nonce = sc.range(0, trials).mapPartitionsWithIndex((indx, iter) => {
       val rand = new scala.util.Random(indx + seed)
       iter.map(x => rand.nextInt(Int.MaxValue - 1) + 1)
+    //line below is to change random generate nonce to ranged nonce     
+//  iter.map(x => rand.nextInt(trials) + 1)
+ 
     })
 
     val hash_result = nonce.map(x => (x.toString(), sha256Hash(x.toString() + header_1)))
