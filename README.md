@@ -49,4 +49,4 @@ k | #trial |  random nonce total time of elapsed (s) | ranged nonce total time o
 
 
 
-The approach to generate the nonce using the range number is less effective than randomly. If the range number is small, then it is challenging to find `xS` that finds the criteria.  
+The approach to generate the nonce using the range number is less effective than randomly. Random nonce covers a bigger range than using range number. If the range number is small, then it is challenging to find `xS` that finds the criteria.  
