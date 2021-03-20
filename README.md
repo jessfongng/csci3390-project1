@@ -40,13 +40,18 @@ Our modification to generate potential nonce from 1 to `n`:
       iter.map(x => rand.nextInt(trials) + 1)
     })
 ```
-The tables below show the total time of elapsed (s) between random nonce and ranged nonce. 
+The table below show the total time of elapsed (s) between random nonce and ranged nonce. 
 k | #trial |  random nonce total time of elapsed (s) | ranged nonce total time of elapsed (s)
 ------------|------------|------------|------------
 2 | 20000 | 3| 4
-2 | 50000 | 4| 6
-2 | <img src="https://render.githubusercontent.com/render/math?math=10^{5}"> | 4| 6
+2 | 50000 | 3| 6
+2 | <img src="https://render.githubusercontent.com/render/math?math=10^{5}"> | 4| 7
+2 | <img src="https://render.githubusercontent.com/render/math?math=10^{7}"> | 30| 25
 
-
+The table below shows the numbers of found hash found over 10000 iterations of the code. 
+k | #trial |  random nonce | ranged nonce
+------------|------------|------------|------------
+2 | 100 | 248| 6301
+3 | 100 | 248| 6289
 
 The approach to generate the nonce using the range number is less effective than randomly. Random nonce covers a bigger range than using range number. If the range number is small, then it is challenging to find `xS` that finds the criteria.  
