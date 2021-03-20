@@ -51,14 +51,14 @@ object main {
 
     val zeroes_prefix = "0" * difficulty;
 
+
     val seed = new java.util.Date().hashCode;
 
     val nonce = sc.range(0, trials).mapPartitionsWithIndex((indx, iter) => {
       val rand = new scala.util.Random(indx + seed)
-      iter.map(x => rand.nextInt(Int.MaxValue - 1) + 1)
-    //line below is to change random generate nonce to ranged nonce     
-//  iter.map(x => rand.nextInt(trials) + 1)
- 
+      // iter.map(x => rand.nextInt(Int.MaxValue - 1)+1)
+     //line below: generate ranged nonce 
+      iter.map(x => rand.nextInt(trials) + 1)
     })
 
     val hash_result = nonce.map(x => (x.toString(), sha256Hash(x.toString() + header_1)))
@@ -78,6 +78,36 @@ object main {
     val durationSeconds = (endTimeMillis - startTimeMillis) / 1000
     println("Time elapsed:" + durationSeconds + "s")
     println("==================================")
+
+/********************************
+ section below is use to test out 10000 iterations of n trials
+********************************/
+/*
+
+  var nfound = 0;
+   for (i <- 1 to 10000) {
+
+   val seed = new java.util.Date().hashCode;
+
+    val nonce = sc.range(0, trials).mapPartitionsWithIndex((indx, iter) => {
+      val rand = new scala.util.Random(indx + seed)
+      iter.map(x => rand.nextInt(Int.MaxValue - 1)+1)
+      //iter.map(x => rand.nextInt(trials) + 1)
+    })
+
+    val hash_result = nonce.map(x => (x.toString(), sha256Hash(x.toString() + header_1)))
+
+    val ans = hash_result.filter({ case (x: String, y: String) => y.startsWith(zeroes_prefix) })
+    ans.cache()
+
+   if (ans.count != 0) {
+     nfound += 1; 
+    }
+      }
+    val endTime = System.currentTimeMillis()
+    val durationS = (endTime - startTimeMillis) / 1000
+    println("=================================")
+    println("found " + nfound + " over 10000 iterations by" + durationS + " s")
+*/
   }
 }
-
