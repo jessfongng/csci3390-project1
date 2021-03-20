@@ -43,9 +43,9 @@ Our modification to generate potential nonce from 1 to `n`:
 The tables below show the total time of elapsed (s) between random nonce and ranged nonce. 
 k | #trial |  random nonce total time of elapsed (s) | ranged nonce total time of elapsed (s)
 ------------|------------|------------|------------
-2 | 20000 | | 4
-2 | 50000 | | 6
-2 | <img src="https://render.githubusercontent.com/render/math?math=10^{5}"> | | 6
+2 | 20000 | 3| 4
+2 | 50000 | 4| 6
+2 | <img src="https://render.githubusercontent.com/render/math?math=10^{5}"> | 4| 6
 
 
 
