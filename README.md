@@ -39,4 +39,13 @@ Our modification to generate potential nonce from 1 to `n`:
       iter.map(x => rand.nextInt(trials) + 1)
     })
 ```
+The tables below show the total time of elapsed (s) between random nonce and ranged nonce. 
+k | #trial |  random nonce total time of elapsed (s) | ranged nonce total time of elapsed (s)
+------------|------------|------------|------------
+2 | 20000 | | 4
+2 | 50000 | | 6
+2 | <img src="https://render.githubusercontent.com/render/math?math=10^{5}"> | | 6
+
+
+
 The approach to generate the nonce using the range number is less effective than randomly. If the range number is small, then it is challenging to find `xS` that finds the criteria.  
