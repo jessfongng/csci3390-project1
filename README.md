@@ -4,7 +4,19 @@ Project 1 report of Large Scale Data Processing class at Boston College. The cod
 
 ## Bitcoin mining - SHA
 The program takes in: Bitcoin heading string `S`, difficulty of the puzzle `k` and number of trials `n`. It will attempt to find a positive integer `x` ("nonce") such that the concatenation `xS` is hashed to a hexadecimal number with `k` leading zeros.  
- For detail description, please check [project 1 assignment description](https://github.com/CSCI3390/project_1).
+First validate your environment by:
+`sbt clean package  
+spark-submit --class project_1.main --master local[*] target/scala-2.12/project_1_2.12-1.0.jar` 
+The following message should appear
+`Usage: project_1 string difficulty #trials`  
+After that, you can run the code by appending the `s`, `k` and `n` variable.
+`// Linux
+spark-submit --class project_1.main --master local[*] target/scala-2.12/project_1_2.12-1.0.jar this_is_a_bitcoin_block_of_12345678 2 100  
+
+// Unix
+spark-submit --class "project_1.main" --master "local[*]" target/scala-2.12/project_1_2.12-1.0.jar this_is_a_bitcoin_block_of_12345678 2 100`
+
+Please reference the specific project description and instruction [here](https://github.com/CSCI3390/project_1).
 ## Report Finding
 ### 1. Run the program on local machine with `k = 2,3,4,5,6`, the result is listed in a table below.
 
@@ -46,12 +58,12 @@ k | #trial |  random nonce total time of elapsed (s) | ranged nonce total time o
 2 | 20000 | 3| 4
 2 | 50000 | 3| 6
 2 | <img src="https://render.githubusercontent.com/render/math?math=10^{5}"> | 4| 7
-2 | <img src="https://render.githubusercontent.com/render/math?math=10^{7}"> | 30| 25
+2 | <img src="https://render.githubusercontent.com/render/math?math=10^{7}"> | 27| 25
 
 The table below shows the numbers of found hash found over 10000 iterations of the code. 
-k | #trial |  random nonce | ranged nonce
-------------|------------|------------|------------
-2 | 100 | 248| 6301
-3 | 100 | 248| 6289
+k | #trial |  #random nonce | time for random nonce (s) | #ranged nonce |  time for ranged nonce (s)
+------------|------------|------------|------------|------------|------------
+2 | 10 | 372| 162 | 0 | 156
+3 | 100 |24| 201|  0 | 178 
 
-The approach to generate the nonce using the range number is less effective than randomly. Random nonce covers a bigger range than using range number. If the range number is small, then it is challenging to find `xS` that finds the criteria.  
+As the first table shows that the elapsed time over large number of trial. The randomize nonce has lower computing time overall. The second table shows that with low numbers of trial, the randomize nonce is more likely to find the `xS` than ranged nonce. Thus, the approach to generate the nonce using the range number is less effective than randomly. Random nonce covers a bigger range than using range number. If the range number is small, then it is challenging to find `xS` that finds the criteria.  
