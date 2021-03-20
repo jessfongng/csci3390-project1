@@ -10,7 +10,7 @@ First validate your environment by:<br/>
 ```
 The following message should appear<br/>   
 `Usage: project_1 string difficulty #trials`<br/>   
-After that, you can run the code by appending the `s`, `k` and `n` variable.<br/>  
+After that, you can run the code by appending the `S`, `k` and `n` variable.<br/>  
 ```
 // Linux  
 spark-submit --class project_1.main --master local[*] target/scala-2.12/project_1_2.12-1.0.jar this_is_a_bitcoin_block_of_12345678 2 100    
