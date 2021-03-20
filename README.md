@@ -3,7 +3,7 @@
 Project 1 report of Large Scale Data Processing class at Boston College. The code had been modify from [project 1 assignment description](https://github.com/CSCI3390/project_1). 
 
 ## Bitcoin mining - SHA
-The program takes in: Bitcoin heading string `S`, difficulty of the puzzle `k` and number of trials `n`. It will attempt to find a positive integer `x` ("nonce") such that the concatenation xS is hashed to a hexadecimal number with k leading zeros.  
+The program takes in: Bitcoin heading string `S`, difficulty of the puzzle `k` and number of trials `n`. It will attempt to find a positive integer `x` ("nonce") such that the concatenation `xS` is hashed to a hexadecimal number with `k` leading zeros.  
  For detail description, please check [project 1 assignment description](https://github.com/CSCI3390/project_1).
 ## Report Finding
 ### 1. Run the program on local machine with `k = 2,3,4,5,6`, the result is listed in a table below.
