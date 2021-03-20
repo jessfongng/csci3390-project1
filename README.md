@@ -66,6 +66,6 @@ The table below shows the numbers of found hash found over 10000 iterations of t
 k | #trial |  #random nonce | time for random nonce (s) | #ranged nonce |  time for ranged nonce (s)
 ------------|------------|------------|------------|------------|------------
 2 | 10 | 372| 162 | 0 | 156
-3 | 100 |24| 201|  0 | 178 
+3 | 10 |24| 201|  0 | 178 
 
 As the first table shows that the elapsed time over large number of trial. The randomize nonce has lower computing time overall. The second table shows that with low numbers of trial, the randomize nonce is more likely to find the `xS` than ranged nonce. Thus, the approach to generate the nonce using the range number is less effective than randomly. Random nonce covers a bigger range than using range number. If the range number is small, then it is challenging to find `xS` that finds the criteria.  
