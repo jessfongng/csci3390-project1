@@ -3,19 +3,19 @@
 Project 1 report of Large Scale Data Processing class at Boston College. The code had been modify from [project 1 assignment description](https://github.com/CSCI3390/project_1). 
 
 ## Bitcoin mining - SHA
-The program takes in: Bitcoin heading string `S`, difficulty of the puzzle `k` and number of trials `n`. It will attempt to find a positive integer `x` ("nonce") such that the concatenation `xS` is hashed to a hexadecimal number with `k` leading zeros.  
-First validate your environment by:
-`sbt clean package  
-spark-submit --class project_1.main --master local[*] target/scala-2.12/project_1_2.12-1.0.jar` 
-The following message should appear
-`Usage: project_1 string difficulty #trials`  
-After that, you can run the code by appending the `s`, `k` and `n` variable.
-`// Linux
-spark-submit --class project_1.main --master local[*] target/scala-2.12/project_1_2.12-1.0.jar this_is_a_bitcoin_block_of_12345678 2 100  
-
-// Unix
-spark-submit --class "project_1.main" --master "local[*]" target/scala-2.12/project_1_2.12-1.0.jar this_is_a_bitcoin_block_of_12345678 2 100`
-
+The program takes in: Bitcoin heading string `S`, difficulty of the puzzle `k` and number of trials `n`. It will attempt to find a positive integer `x` ("nonce") such that the concatenation `xS` is hashed to a hexadecimal number with `k` leading zeros.   
+First validate your environment by:   
+`sbt clean package   
+spark-submit --class project_1.main --master local[*] target/scala-2.12/project_1_2.12-1.0.jar`   
+The following message should appear   
+`Usage: project_1 string difficulty #trials`   
+After that, you can run the code by appending the `s`, `k` and `n` variable.  
+` // Linux  
+spark-submit --class project_1.main --master local[*] target/scala-2.12/project_1_2.12-1.0.jar this_is_a_bitcoin_block_of_12345678 2 100    
+   
+// Unix  
+spark-submit --class "project_1.main" --master "local[*]" target/scala-2.12/project_1_2.12-1.0.jar this_is_a_bitcoin_block_of_12345678 2 100`  
+  
 Please reference the specific project description and instruction [here](https://github.com/CSCI3390/project_1).
 ## Report Finding
 ### 1. Run the program on local machine with `k = 2,3,4,5,6`, the result is listed in a table below.
